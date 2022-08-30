@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    box-sizing: border-box;
+}
+
+main > div {
+    box-sizing: inherit;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    box-sizing: inherit;
+    width: 60vw;
+}
+
+#content {
+    box-sizing: border-box;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 6vh 94vh;
+    grid-template-columns: 1fr;
+}
+
+.nav-bar {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar li {
+    padding: 0 60px;
+}
+
+.nav-bar li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Home Page */
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.home-intro p {
+    margin: 10px 0;
+}
+
+.home-intro p:first-of-type {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.home-intro button {
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit
+}
+
+.home-intro button:hover {
+    cursor: pointer;
+}
