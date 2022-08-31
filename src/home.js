@@ -5,6 +5,7 @@ function homePage() {
     const div = document.createElement('div');
     const contentDiv = document.createElement('div');
 
+    main.classList.add('home-main');
     main.appendChild(div);
     div.appendChild(contentDiv);
 
