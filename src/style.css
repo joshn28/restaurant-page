@@ -103,7 +103,8 @@ button:hover {
 
 /* Contact Page */
 
-input, textarea {
+.contact-form input, 
+.contact-form textarea {
     appearance: none;
     padding: 10px;
     font-size: inherit;
@@ -111,27 +112,27 @@ input, textarea {
     margin-bottom: 20px;
 }
 
-input {
+.contact-form input {
     border: 1px solid black;
 }
 
-form div {
+.contact-form div {
     display: flex;
     flex-direction: column;
 }
 
-form h1,
-form p {
+.contact-form h1,
+.contact-form p {
     text-align: center;
     margin: 0 0 20px;
 }
 
-form button {
+.contact-form button {
     display: block;
     margin: 0 auto;
 }
 
-textarea {
+.contact-form textarea {
     resize: vertical;
     overflow: auto;
 }
