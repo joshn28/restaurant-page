@@ -9,10 +9,18 @@ import sausageSrc from './sausage.jpg';
 
 function menuPage() {
     const main = document.createElement('main');
+    const menuDiv = document.createElement('div');
     const menu = document.createElement('div');
+    const header = document.createElement('h1');
 
+    header.textContent = 'Our Best Dishes';
     menu.classList.add('menu');
-    main.appendChild(menu);
+
+    menuDiv.classList.add('menu-container');
+    menuDiv.appendChild(header);
+    menuDiv.appendChild(menu);
+    
+    main.appendChild(menuDiv);
 
     const menuItems = [
         {
