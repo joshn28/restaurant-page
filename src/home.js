@@ -1,4 +1,4 @@
-import imgSrc from "./pexels-helena-lopes-693269.jpg";
+import imgSrc from "./homepage-photo.jpg";
 
 function homePage() {
     const main = document.createElement('main');
