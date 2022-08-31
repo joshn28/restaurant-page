@@ -17,17 +17,18 @@ main {
     box-sizing: border-box;
 }
 
-.home-main > div {
-    box-sizing: inherit;
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit;
 }
 
-.home-main img {
-    box-sizing: inherit;
-    width: 60vw;
+button:hover {
+    cursor: pointer;
 }
 
 #content {
@@ -37,6 +38,8 @@ main {
     grid-template-rows: 6vh 94vh;
     grid-template-columns: 1fr;
 }
+
+/* Nav Bar */
 
 .nav-bar {
     margin: 0;
@@ -64,6 +67,19 @@ main {
 
 /* Home Page */
 
+.home-main > div {
+    box-sizing: inherit;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main img {
+    box-sizing: inherit;
+    width: 60vw;
+}
+
 .home-intro {
     display: flex;
     flex-direction: column;
@@ -83,15 +99,51 @@ main {
 
 .home-intro button {
     margin-top: 10px;
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    align-self: flex-start;
-    padding: 10px 20px;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: inherit
 }
 
-.home-intro button:hover {
-    cursor: pointer;
+/* Contact Page */
+
+input, textarea {
+    appearance: none;
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid black;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1,
+form p {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+.contact-form {
+    width: 350px;
+    height: min-content;
+    margin: auto;
+    padding: 30px 75px;
+    border: 1px solid black;
+}
+
+.contact-msg {
+    text-align: center;
 }
