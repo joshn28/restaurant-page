@@ -8,18 +8,17 @@ function navBar() {
     const linkNames = [
         'Home',
         'Menu',
-        'Gallery',
-        'About'
+        'Contact',
     ];
 
     linkNames.forEach(name => {
         const li = document.createElement('li');
-        const a = document.createElement('a');
+        const span = document.createElement('span');
         
-        a.setAttribute('href', '#');
-        a.textContent = name;
+        span.classList.add(`${name.toLowerCase()}-link`);
+        span.textContent = name;
 
-        li.appendChild(a);
+        li.appendChild(span);
         ul.appendChild(li);
     });
 
