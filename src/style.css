@@ -53,13 +53,13 @@ main img {
     padding: 0 60px;
 }
 
-.nav-bar li a {
+.nav-bar li span {
     color: var(--secondary-color);
-    text-decoration: none;
 }
 
-.nav-bar li a:hover {
+.nav-bar li span:hover {
     border-bottom: 2px solid var(--secondary-color);
+    cursor: pointer;
 }
 
 /* Home Page */
