@@ -17,7 +17,7 @@ main {
     box-sizing: border-box;
 }
 
-main > div {
+.home-main > div {
     box-sizing: inherit;
     width: 40vw;
     display: flex;
@@ -25,7 +25,7 @@ main > div {
     align-items: center;
 }
 
-main img {
+.home-main img {
     box-sizing: inherit;
     width: 60vw;
 }
