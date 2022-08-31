@@ -25,49 +25,66 @@ function menuPage() {
     const menuItems = [
         {
             name: 'Pancakes',
-            src: pancakeSrc
+            src: pancakeSrc,
+            price: '$7.99',
         },
         {
             name: 'Burrito',
-            src: burritoSrc
+            src: burritoSrc,
+            price: '$3.19',
         },
         {
             name: 'Burger',
-            src: burgerSrc
+            src: burgerSrc,
+            price: '$6.99',
         },
         {
             name: 'Pasta',
-            src: pastaSrc
+            src: pastaSrc,
+            price: '$18.97',
         },
         {
             name: 'Ramen',
-            src: ramenSrc
+            src: ramenSrc,
+            price: '$14.29',
         },
         {
             name: 'Salad',
-            src: saladSrc
+            src: saladSrc,
+            price: '$25.25',
         },
         {
             name: 'Pizza',
-            src: pizzaSrc
+            src: pizzaSrc,
+            price: '$12.99',
         },
         {
             name: 'Cooked Sausage',
-            src: sausageSrc
+            src: sausageSrc,
+            price: '$9.97'
         },
     ];
 
     menuItems.forEach(item => {
         const itemDiv = document.createElement('div');
         const itemImg = new Image();
+
+        const itemInfo = document.createElement('div');
         const itemDesc = document.createElement('span');
+        const itemPrice = document.createElement('span');
 
         itemDiv.classList.add('menu-item');
+        itemInfo.classList.add('menu-description');
+
         itemImg.src = item.src;
+        itemPrice.textContent = item.price;
         itemDesc.textContent = item.name;
 
+        itemInfo.appendChild(itemDesc);
+        itemInfo.appendChild(itemPrice);
+
         itemDiv.appendChild(itemImg);
-        itemDiv.appendChild(itemDesc);
+        itemDiv.appendChild(itemInfo);
 
         menu.appendChild(itemDiv);
     });
