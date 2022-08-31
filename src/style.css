@@ -29,6 +29,8 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 #content {
