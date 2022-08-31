@@ -1,8 +1,8 @@
 import './style.css';
 import navBar from "./nav-bar";
-import homePage from "./home";
-import contactPage from './contact';
-import menuPage from './menu';
+import homePage from "./home/home";
+import contactPage from './contact/contact';
+import menuPage from './menu/menu';
 
 const content = document.querySelector("#content");
 
