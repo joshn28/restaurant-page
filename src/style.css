@@ -186,3 +186,8 @@ button:hover {
     height: 90%;
     width: 100%;
 }
+
+.menu-description {
+    display: flex;
+    justify-content: space-between;   
+}
