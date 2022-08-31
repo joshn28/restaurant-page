@@ -64,9 +64,9 @@ function contactPage() {
     const commentInput = document.createElement('textarea');
 
     commentLabel.setAttribute('for', 'comment');
-    commentLabel.textContent = 'Email:';
+    commentLabel.textContent = 'Comments:';
 
-    commentInput.setAttribute('name', 'comment');
+    commentInput.setAttribute('name', 'comments');
     commentInput.setAttribute('id', 'comment');
     commentInput.setAttribute('rows', '5');
 
